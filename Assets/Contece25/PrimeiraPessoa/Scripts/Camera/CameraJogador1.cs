@@ -54,7 +54,7 @@ public class CameraJogador : MonoBehaviour
         //aqui limita o usario para nao olhar muito alem da sua angulação
         rotacaoX = Mathf.Clamp(rotacaoX, -90f, 90f);
 
-        transform.rotation = Quaternion.Euler(rotacaoX, rotacaoY, 0);
-        orientacao.rotation = Quaternion.Euler(0, rotacaoY, 0);
+        transform.rotation = Quaternion.Euler(rotacaoX, rotacaoY, 0); //gira camera(cima baixo)
+        orientacao.rotation = Quaternion.Euler(0, rotacaoY, 0); //gira lados
     }
 }
